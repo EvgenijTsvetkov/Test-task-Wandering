@@ -6,10 +6,12 @@ namespace Logic.States
     public class OpenDoorState : State
     {
         private readonly WalkerInteractDoor entity;
+        private readonly StateType stateType;
         private Door foundDoor;
-        public OpenDoorState(StateMachine stateMachine, WalkerInteractDoor entity) : base(stateMachine)
+        public OpenDoorState(StateMachine stateMachine, WalkerInteractDoor entity, StateType stateType) : base(stateMachine)
         {
             this.entity = entity;
+            this.stateType = stateType;
         }
 
         public override void OnUpdate()
@@ -29,6 +31,7 @@ namespace Logic.States
         {
             base.OnStateEnter();
 
+            entity.DisplayIconState(stateType);
             foundDoor = entity.InteractDoorsService.FindNearestDoor(entity.Transform.position);
 
             if (foundDoor is null)

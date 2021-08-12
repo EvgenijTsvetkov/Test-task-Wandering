@@ -994,6 +994,10 @@
             </e>
             <e p="StateType.cs" t="Include" />
           </e>
+          <e p="Misc" t="Include">
+            <e p="DisplayStatusState.cs" t="Include" />
+            <e p="LookAtCamera.cs" t="Include" />
+          </e>
           <e p="Services" t="Include">
             <e p="InteractDoorsService.cs" t="Include" />
             <e p="RoomsService.cs" t="Include" />

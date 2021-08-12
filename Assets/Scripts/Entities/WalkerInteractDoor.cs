@@ -37,7 +37,7 @@ namespace Entities
         {
             base.CreateStateMachine();
 
-            states.Add(StateType.OpenDoor, new OpenDoorState(stateMachine, this));
+            states.Add(StateType.OpenDoor, new OpenDoorState(stateMachine, this, StateType.OpenDoor));
         }
 
         protected internal void InvokeOpenDoor(Door openedDoor, Room to)

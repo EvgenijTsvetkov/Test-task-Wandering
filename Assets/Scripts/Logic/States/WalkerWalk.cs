@@ -6,10 +6,12 @@ namespace Logic.States
     public class WalkerWalk : State
     {
         private readonly Walker entity;
+        private readonly StateType stateType;
 
-        public WalkerWalk(StateMachine stateMachine, Walker entity) : base(stateMachine)
+        public WalkerWalk(StateMachine stateMachine, Walker entity, StateType stateType) : base(stateMachine)
         {
             this.entity = entity;
+            this.stateType = stateType;
         }
 
         public override void OnUpdate()
@@ -20,6 +22,13 @@ namespace Logic.States
                 return;
 
             stateMachine.ChangeState(entity.IdleState);
+        }
+
+        public override void OnStateEnter()
+        {
+            base.OnStateEnter();
+            
+            entity.DisplayIconState(stateType);
         }
 
         public void SetDestination(Vector3 destination) => 

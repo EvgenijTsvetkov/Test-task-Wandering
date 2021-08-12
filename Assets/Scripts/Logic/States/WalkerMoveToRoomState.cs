@@ -6,11 +6,13 @@ namespace Logic.States
     public class WalkerMoveToRoomState : State
     {
         private readonly Walker entity;
+        private readonly StateType stateType;
         private Door openedDoor;
 
-        public WalkerMoveToRoomState(StateMachine stateMachine, Walker entity) : base(stateMachine)
+        public WalkerMoveToRoomState(StateMachine stateMachine, Walker entity, StateType stateType) : base(stateMachine)
         {
             this.entity = entity;
+            this.stateType = stateType;
         }
 
         public override void OnUpdate()
@@ -28,6 +30,7 @@ namespace Logic.States
             base.OnStateEnter();
 
             entity.Move.ToDestination(entity.CurrentRoom.GetRandomPoint());
+            entity.DisplayIconState(stateType);
         }
 
         public void SetOpenedDoor(Door door) =>

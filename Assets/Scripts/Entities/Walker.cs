@@ -2,13 +2,17 @@ using System.Collections.Generic;
 using Logic;
 using Logic.InteractDoor;
 using Logic.States;
+using Misc;
 using Services;
+using UnityEngine;
 using Zenject;
 
 namespace Entities
 {
     public class Walker : Entity
     {
+        [SerializeField] private DisplayStatusState displayStatusState;
+        
         private RoomsService roomsService;
         private Room currentRoom;
         
@@ -46,9 +50,9 @@ namespace Entities
 
             states = new Dictionary<StateType, State>
             {
-                {StateType.Idle, new WalkerIdle(stateMachine, this)},
-                {StateType.Walk, new WalkerWalk(stateMachine, this)},
-                {StateType.MoveToRoom, new WalkerMoveToRoomState(stateMachine, this)},
+                {StateType.Idle, new WalkerIdle(stateMachine, this, StateType.Idle)},
+                {StateType.Walk, new WalkerWalk(stateMachine, this, StateType.Walk)},
+                {StateType.MoveToRoom, new WalkerMoveToRoomState(stateMachine, this, StateType.MoveToRoom)},
             };
         }
 
@@ -57,5 +61,8 @@ namespace Entities
             MoveToRoomState.SetOpenedDoor(openedDoor);
             stateMachine.ChangeState(MoveToRoomState);
         }
+
+        protected internal void DisplayIconState(StateType stateType) =>
+            displayStatusState.Display(stateType);
     }
 }

@@ -3,9 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="71d8bc06-3b40-48f6-8eaf-298666258f91" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Test Wandering/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test Wandering/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Test Wandering/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test Wandering/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Test Wandering/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test Wandering/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/WalkersService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/WalkersService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entities/Walker Interact Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entities/Walker Interact Door.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entities/Walker.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entities/Walker.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Walker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Walker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/WalkerInteractDoor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/WalkerInteractDoor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/States/OpenDoorState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Logic/States/OpenDoorState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/States/WalkerIdle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Logic/States/WalkerIdle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/States/WalkerMoveToRoomState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Logic/States/WalkerMoveToRoomState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/States/WalkerWalk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Logic/States/WalkerWalk.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +24,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/LocalInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BAEBF9A-F865-4167-8FD1-5BFDBF5F26EB/56/1d134a84/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Misc/LookAtCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BAEBF9A-F865-4167-8FD1-5BFDBF5F26EB/ab/2dfed861/Random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2A5A170A-AFDC-4E62-AE42-6239EAA657AF/95/84efa5ac/NavMeshAgent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Services/WalkersService.cs" root0="FORCE_HIGHLIGHTING" />
@@ -45,21 +52,24 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Services/InteractDoorsService.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Logic/Move/AgentMoveToDestination.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Logic/Room.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Logic/States/WalkerIdle.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Logic/StateMachine.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Logic/InteractDoor/DoorStatus.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Logic/InteractDoor/Door.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Services/RoomsService.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/LocalInstaller.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Entities/WalkerInteractDoor.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Logic/States/MoveToRoom.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Logic/States/WalkerWalk.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Logic/States/WalerMoveToRoom.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Entity.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Walker.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Logic/StateType.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Logic/States/OpenDoorState.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Services/WalkersService.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Misc/LookAtCamera.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Misc/DisplayIconState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Logic/States/WalkerWalk.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Logic/States/WalkerMoveToRoomState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Logic/States/OpenDoorState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Entities/WalkerInteractDoor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Walker.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Logic/States/WalkerIdle.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1waMHtecYOnpySZ8xsafsEqGvrp" />
@@ -109,7 +119,7 @@
       <workItem from="1628700244055" duration="3175000" />
       <workItem from="1628708115196" duration="16731000" />
       <workItem from="1628746137272" duration="14748000" />
-      <workItem from="1628788445167" duration="599000" />
+      <workItem from="1628788445167" duration="2716000" />
     </task>
     <servers />
   </component>
@@ -118,6 +128,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

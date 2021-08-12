@@ -5,16 +5,18 @@ namespace Logic.States
 {
     public class WalkerIdle : State
     {
-        private const int MinDuration = 1;
-        private const int MaxDuration = 4;
+        private const float MinDuration = 2;
+        private const float MaxDuration = 4;
 
         private readonly Walker entity;
+        private readonly StateType stateType;
         private float duration;
 
    
-        protected internal WalkerIdle(StateMachine stateMachine, Walker entity) : base(stateMachine)
+        protected internal WalkerIdle(StateMachine stateMachine, Walker entity, StateType stateType) : base(stateMachine)
         {
             this.entity = entity;
+            this.stateType = stateType;
         }
 
         public override void OnUpdate()
@@ -36,6 +38,7 @@ namespace Logic.States
             base.OnStateEnter();
 
             RandomizeDuration();
+            entity.DisplayIconState(stateType);
         }
 
         private void RandomizeDuration() =>
