@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71d8bc06-3b40-48f6-8eaf-298666258f91" name="Default Changelist" comment="" />
+    <list default="true" id="71d8bc06-3b40-48f6-8eaf-298666258f91" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Test Wandering/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test Wandering/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Test Wandering/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test Wandering/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Test Wandering/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test Wandering/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/WalkersService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/WalkersService.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/LocalInstaller.cs" root0="FORCE_HIGHLIGHTING" />
@@ -49,12 +57,13 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Logic/States/WalerMoveToRoom.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Entity.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Walker.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Services/WalkersService.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Logic/StateType.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Logic/States/OpenDoorState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Services/WalkersService.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1waMHtecYOnpySZ8xsafsEqGvrp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -78,10 +87,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="12808">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="12808" />
+      <option name="pid" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -100,6 +109,7 @@
       <workItem from="1628700244055" duration="3175000" />
       <workItem from="1628708115196" duration="16731000" />
       <workItem from="1628746137272" duration="14748000" />
+      <workItem from="1628788445167" duration="599000" />
     </task>
     <servers />
   </component>
@@ -110,24 +120,5 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Services/WalkersService.cs</url>
-          <line>30</line>
-          <properties documentPath="D:\MyProjects\MyLearning\Unity\Test Wandering\Assets\Scripts\Services\WalkersService.cs" initialLine="30" containingFunctionPresentation="method 'OnOpenDoor'">
-            <startOffsets>
-              <option value="816" />
-            </startOffsets>
-            <endOffsets>
-              <option value="893" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -23,17 +23,16 @@ namespace Services
 
         private void OnOpenDoor(Door openedDoor, Room from, Room to)
         {
-            var walkersInFromRoom = walkers.Where(walker => walker.CurrentRoom == from).ToList();
-            var walkersInFromTo = walkers.Where(walker => walker.CurrentRoom == to).ToList();
+            var walkersInRooms =
+                walkers
+                    .Where(walker => walker.CurrentRoom == from || walker.CurrentRoom == to)
+                    .ToList();
 
-            if (walkersInFromRoom.Count == 0 && walkersInFromTo.Count == 0)
+            if (walkersInRooms.Count == 0)
                 return;
 
-            var allWalkers = new List<Walker>(walkersInFromRoom);
-            allWalkers.AddRange(walkersInFromTo);
-
-            var walkerWantingMoveToRoom = allWalkers[Random.Range(0, allWalkers.Count)];
-            walkerWantingMoveToRoom.CurrentRoom = walkersInFromRoom.Contains(walkerWantingMoveToRoom) ? to : from;
+            var walkerWantingMoveToRoom = walkersInRooms[Random.Range(0, walkersInRooms.Count)];
+            walkerWantingMoveToRoom.CurrentRoom = walkerWantingMoveToRoom.CurrentRoom == from ? to : from;
 
             walkerWantingMoveToRoom.MoveToRoom(openedDoor);
         }
