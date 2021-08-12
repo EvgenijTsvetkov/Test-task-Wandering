@@ -26,11 +26,7 @@ namespace Logic.States
             if (IsTimeNotOver())
                 return;
 
-            var pointInRoom = entity.CurrentRoom.GetRandomPoint();
-            if (IsNotDestination(pointInRoom)) return;
-            
-            entity.WalkState.SetDestination(pointInRoom);
-            stateMachine.ChangeState(entity.WalkState);
+            TransitionToWalkState();
         }
 
         public override void OnStateEnter()
@@ -39,6 +35,15 @@ namespace Logic.States
 
             RandomizeDuration();
             entity.DisplayIconState(stateType);
+        }
+
+        private void TransitionToWalkState()
+        {
+            var pointInRoom = entity.CurrentRoom.GetRandomPoint();
+            if (IsNotDestination(pointInRoom)) return;
+
+            entity.WalkState.SetDestination(pointInRoom);
+            stateMachine.ChangeState(entity.WalkState);
         }
 
         private void RandomizeDuration() =>

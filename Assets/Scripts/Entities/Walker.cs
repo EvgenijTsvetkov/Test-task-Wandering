@@ -18,7 +18,7 @@ namespace Entities
         
         public WalkerIdle IdleState => (WalkerIdle) states[StateType.Idle];
         public WalkerWalk WalkState => (WalkerWalk) states[StateType.Walk];
-        public WalkerMoveToRoomState MoveToRoomState => (WalkerMoveToRoomState) states[StateType.MoveToRoom];
+        private WalkerMoveToRoomState MoveToRoomState => (WalkerMoveToRoomState) states[StateType.MoveToRoom];
         protected internal RoomsService RoomsService => roomsService;
 
         public Room CurrentRoom

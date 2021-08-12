@@ -34,10 +34,7 @@ namespace Logic.States
             entity.DisplayIconState(stateType);
             foundDoor = entity.InteractDoorsService.FindNearestDoor(entity.Transform.position);
 
-            if (foundDoor is null)
-                stateMachine.ChangeState(entity.IdleState);
-            else
-                entity.Move.ToDestination(foundDoor.Position());
+            TransitionToNextState();
         }
 
         public override void OnStateExit()
@@ -46,6 +43,14 @@ namespace Logic.States
 
             foundDoor = null;
             entity.StartCoroutine(entity.WaitAndChangeStateToOpenDoor());
+        }
+
+        private void TransitionToNextState()
+        {
+            if (foundDoor is null)
+                stateMachine.ChangeState(entity.IdleState);
+            else
+                entity.Move.ToDestination(foundDoor.Position());
         }
 
         private bool IsNotReachedDoor() =>

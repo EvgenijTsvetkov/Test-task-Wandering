@@ -6,7 +6,7 @@ namespace Logic
     {
         protected readonly StateMachine stateMachine;
         protected float startTime;
-        
+
         protected State(StateMachine stateMachine)
         {
             this.stateMachine = stateMachine;
@@ -20,7 +20,7 @@ namespace Logic
         {
         }
 
-        public virtual void OnStateEnter() => 
+        public virtual void OnStateEnter() =>
             startTime = Time.time;
 
         public virtual void OnStateExit()

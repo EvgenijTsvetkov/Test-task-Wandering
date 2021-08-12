@@ -21,7 +21,7 @@ namespace Logic.States
             if (entity.IsMoving())
                 return;
 
-            stateMachine.ChangeState(entity.IdleState);
+            TransitionToIdleState();
         }
 
         public override void OnStateEnter()
@@ -30,6 +30,9 @@ namespace Logic.States
             
             entity.DisplayIconState(stateType);
         }
+
+        private void TransitionToIdleState() => 
+            stateMachine.ChangeState(entity.IdleState);
 
         public void SetDestination(Vector3 destination) => 
             entity.Move.ToDestination(destination);
