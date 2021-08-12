@@ -5,7 +5,7 @@ namespace Logic.States
 {
     public class WalkerIdle : State
     {
-        private const float MinDuration = 2;
+        private const float MinDuration = .5f;
         private const float MaxDuration = 4;
 
         private readonly Walker entity;

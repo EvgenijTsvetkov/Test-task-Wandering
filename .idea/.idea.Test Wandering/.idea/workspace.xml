@@ -4,14 +4,11 @@
     <list default="true" id="71d8bc06-3b40-48f6-8eaf-298666258f91" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Test Wandering/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test Wandering/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Test Wandering/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test Wandering/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entities/Walker Interact Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entities/Walker Interact Door.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entities/Walker.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entities/Walker.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Walker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Walker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/WalkerInteractDoor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/WalkerInteractDoor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/States/OpenDoorState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Logic/States/OpenDoorState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/States/WalkerIdle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Logic/States/WalkerIdle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/States/WalkerMoveToRoomState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Logic/States/WalkerMoveToRoomState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/States/WalkerWalk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Logic/States/WalkerWalk.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Hud/Hud.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Hud/Hud.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/2 Rooms.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/2 Rooms.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/4 Rooms.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/4 Rooms.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +19,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Misc/ButtonsHandlers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/LocalInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BAEBF9A-F865-4167-8FD1-5BFDBF5F26EB/56/1d134a84/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Misc/LookAtCamera.cs" root0="FORCE_HIGHLIGHTING" />
@@ -70,6 +68,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Entities/WalkerInteractDoor.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Walker.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Logic/States/WalkerIdle.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Misc/DisplayStatusState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Misc/ButtonsHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Misc/ButtonsHandlers.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1waMHtecYOnpySZ8xsafsEqGvrp" />
@@ -88,6 +89,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../2 Rooms\Test Wandering.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\MyProjects\MyLearning\2 Rooms" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -119,7 +128,7 @@
       <workItem from="1628700244055" duration="3175000" />
       <workItem from="1628708115196" duration="16731000" />
       <workItem from="1628746137272" duration="14748000" />
-      <workItem from="1628788445167" duration="2716000" />
+      <workItem from="1628788445167" duration="4060000" />
     </task>
     <servers />
   </component>
